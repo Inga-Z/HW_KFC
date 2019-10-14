@@ -1,40 +1,25 @@
-console.log('worker');
+console.log('worked');
 
-const food = {
-    id: 'kfc',
-    avatarUrl: 'https://placekitten.com/50/50',
-};
 
-const first = { 
-    id: 'photo-1',
-    price: 124,
-    photo: 'https://placekitten.com/50/50',
-    name: 'Чизбургер Де Люкс',
-    quantity: 1,
-    summ: 124,
-    weight: 226,
-    content: 'Большой контент!!!',
-    calories: 193,
-    squirrels: 12.6,
-    fats: 6.6,
-    carbohydrates: 20.7,
-};
-
-console.log(first); 
-
-const second = { 
-    id: 'photo-2',
-    price: 79,
-    photo: 'https://placekitten.com/50/50',
+const dan = {
+    id: 'dan_abramov',
     name: 'Хот-дог куриный',
-    quantity: 1,
-    summ: 79,
-    weight: 124,
-    content: 'Большой контент!!!',
-    calories: 226,
-    squirrels: 9.6,
-    fats: 10.1,
-    carbohydrates: 24.3,
+    avatarUrl: 'https://s82079.cdn.ngenix.net/Wyvkk6X2vsQ7jGr8c84MzfK1.png?dw=230',
 };
 
-console.log(second); 
+const firstTweet = {
+    id: 1166364879852359681,
+    author: dan,
+    content: '...',
+    created: 1569659115,
+    comments: 183,
+    retweets: 988,
+    likes: 6324,
+};
+
+
+const avatarEl = document.getElementById('avatar'); 
+avatarEl.src = firstTweet.author.avatarUrl;
+
+const authorNameEl = document.getElementById('author-name');
+authorNameEl.textContent = firstTweet.author.name;
