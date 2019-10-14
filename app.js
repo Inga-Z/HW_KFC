@@ -1,25 +1,36 @@
 console.log('worked');
 
-
-const dan = {
-    id: 'dan_abramov',
+const burger = {
+    author: 'kfc',
     name: 'Хот-дог куриный',
     avatarUrl: 'https://s82079.cdn.ngenix.net/Wyvkk6X2vsQ7jGr8c84MzfK1.png?dw=230',
+    
 };
 
-const firstTweet = {
-    id: 1166364879852359681,
-    author: dan,
-    content: '...',
-    created: 1569659115,
-    comments: 183,
-    retweets: 988,
-    likes: 6324,
+const firstBurger = {
+    author: burger,
+    name: 'Хот-дог куриный',
+    imgUrl: 'https://s82079.cdn.ngenix.net/Wyvkk6X2vsQ7jGr8c84MzfK1.png?dw=230',
 };
 
+const burgerFerstEl = document.getElementById('photo-1'); 
+burgerFerstEl.src = firstBurger.author.avatarUrl;
 
-const avatarEl = document.getElementById('avatar'); 
-avatarEl.src = firstTweet.author.avatarUrl;
+const burgerFerstNameEl = document.getElementById('author-name');
+burgerFerstNameEl.textContent = firstBurger.author.name;
 
-const authorNameEl = document.getElementById('author-name');
-authorNameEl.textContent = firstTweet.author.name;
+const secondBurger = {
+    author: burger,
+    name: 'Чизбургер Де Люкс',
+    imgUrl: ' https://s82079.cdn.ngenix.net/MXahUbKht6Q6D2wGRYrAz7nu.png?dw=230',
+};
+
+const burgerSecondEl = document.getElementById('photo-2'); 
+burgerSecondEl.src = secondBurger.author.avatarUrl;
+
+const burgerSecondNameEl = document.getElementById('author-name');
+authorNameEl.textContent = secondBurger.author.name;
+
+
+
+
