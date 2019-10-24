@@ -9,7 +9,7 @@ const firstBurger = {
 const burgerFerstEl = document.getElementById('photo-1'); 
 burgerFerstEl.src = firstBurger.imgUrl;
 
-const burgerFerstNameEl = document.getElementById('author-name1');
+const burgerFerstNameEl = document.getElementById('burger-name1');
 burgerFerstNameEl.textContent = firstBurger.name;
 
 const secondBurger = {
@@ -20,5 +20,5 @@ const secondBurger = {
 const burgerSecondtEl = document.getElementById('photo-2'); 
 burgerSecondtEl.src = secondBurger.imgUrl;
 
-const burgerSecondNameEl = document.getElementById('author-name2');
+const burgerSecondNameEl = document.getElementById('burger-name2');
 burgerSecondNameEl.textContent = secondBurger.name;
